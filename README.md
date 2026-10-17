@@ -68,20 +68,12 @@ CampusFix AI is a web-based complaint management system that helps students repo
 
 ## Project Structure
 
-
-
 ```text
-
 CampusFix/
-
-â”œâ”€â”€ campusfix-frontend/   # React frontend
-
-â”œâ”€â”€ campusfix-backend/    # Spring Boot REST API
-
-â””â”€â”€ ai-sevice/            # FastAPI machine learning service
-
+|-- campusfix-frontend/   - React frontend
+|-- campusfix-backend/    - Spring Boot REST API
+|-- ai-sevice/            - FastAPI machine learning service
 ```
-
 
 
 ## Running Locally
