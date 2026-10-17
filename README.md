@@ -28,27 +28,13 @@ CampusFix AI is a web-based complaint management system that helps students repo
 
 ## Technology Stack
 
-
-
-| Component | Technologies |
-
-|---|---|
-
-| Frontend | React, Vite, JavaScript, CSS |
-
-| Backend | Java, Spring Boot |
-
-| AI Service | Python, FastAPI, scikit-learn |
-
-| Machine Learning | TF-IDF, Logistic Regression |
-
-| Database | PostgreSQL |
-
-| API Testing | Swagger UI, Postman |
-
-| Version Control | Git, GitHub |
-
-
+- **Frontend:** React, Vite, JavaScript, CSS
+- **Backend:** Java, Spring Boot
+- **AI Service:** Python, FastAPI, scikit-learn
+- **Machine Learning:** TF-IDF, Logistic Regression
+- **Database:** PostgreSQL
+- **API Testing:** Swagger UI, Postman
+- **Version Control:** Git, GitHub
 
 ## System Architecture
 
@@ -161,22 +147,26 @@ npm run dev
 Open the local URL shown by Vite, usually http://localhost:5173.
 
 
-
 ## API Endpoints
 
-
+### Spring Boot Backend
 
 | Method | Endpoint | Purpose |
-
 |---|---|---|
-
-| GET | `/api/complaints` | Retrieve complaints |
-
+| GET | `/api/complaints` | Retrieve all complaints |
 | PUT | `/api/complaints/{id}/status?status=RESOLVED` | Update a complaint's status |
 
-| POST | `/predict` | Predict complaint category and priority using the AI service |
+Base URL: `http://localhost:8080`
 
+### FastAPI AI Service
 
+| Method | Endpoint | Purpose |
+|---|---|---|
+| POST | `/predict` | Predict complaint category and priority |
+
+Base URL: `http://127.0.0.1:8001`
+
+Interactive API documentation: `http://127.0.0.1:8001/docs`
 
 The Spring Boot backend runs on port `8080`, while the AI service runs on port `8001`.
 
