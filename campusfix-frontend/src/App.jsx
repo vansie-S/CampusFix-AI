@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from "react";
 import "./App.css";
 
-const API_URL = "http://localhost:8080/api/complaints";
+const API_URL = "https://campusfix-backend-gxmz.onrender.com/api/complaints";
 
 function App() {
     const [complaint, setComplaint] = useState("");
