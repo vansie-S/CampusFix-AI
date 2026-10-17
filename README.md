@@ -1,4 +1,4 @@
-\# CampusFix AI — Smart Campus Complaint Management System
+﻿# CampusFix AI - Smart Campus Complaint Management System
 
 
 
@@ -6,27 +6,27 @@ CampusFix AI is a web-based complaint management system that helps students repo
 
 
 
-\## Features
+## Features
 
 
 
-\- \*\*Complaint Submission:\*\* Submit campus complaints through a React interface.
+- **Complaint Submission:** Submit campus complaints through a React interface.
 
-\- \*\*AI-Powered Classification:\*\* Predict complaint categories using TF-IDF and Logistic Regression.
+- **AI-Powered Classification:** Predict complaint categories using TF-IDF and Logistic Regression.
 
-\- \*\*Priority Prediction:\*\* Predict complaint priority using the AI service.
+- **Priority Prediction:** Predict complaint priority using the AI service.
 
-\- \*\*Complaint Tracking:\*\* View complaints and their current status.
+- **Complaint Tracking:** View complaints and their current status.
 
-\- \*\*Status Management:\*\* Update complaints to OPEN, IN-PROGRESS, or RESOLVED.
+- **Status Management:** Update complaints to OPEN, IN-PROGRESS, or RESOLVED.
 
-\- \*\*Database Integration:\*\* Store complaint records in PostgreSQL through Spring Boot.
+- **Database Integration:** Store complaint records in PostgreSQL through Spring Boot.
 
-\- \*\*REST APIs:\*\* Communicate between services using REST endpoints.
+- **REST APIs:** Communicate between services using REST endpoints.
 
 
 
-\## Technology Stack
+## Technology Stack
 
 
 
@@ -50,23 +50,23 @@ CampusFix AI is a web-based complaint management system that helps students repo
 
 
 
-\## System Architecture
+## System Architecture
 
 
 
-1\. Users submit complaints through the React frontend.
+1. Users submit complaints through the React frontend.
 
-2\. The AI service predicts the complaint category and priority.
+2. The AI service predicts the complaint category and priority.
 
-3\. The Spring Boot backend handles complaint operations.
+3. The Spring Boot backend handles complaint operations.
 
-4\. PostgreSQL stores complaint details and status information.
+4. PostgreSQL stores complaint details and status information.
 
-5\. The frontend displays complaints and their updated statuses.
+5. The frontend displays complaints and their updated statuses.
 
 
 
-\## Project Structure
+## Project Structure
 
 
 
@@ -74,35 +74,35 @@ CampusFix AI is a web-based complaint management system that helps students repo
 
 CampusFix/
 
-├── campusfix-frontend/   # React frontend
+â”œâ”€â”€ campusfix-frontend/   # React frontend
 
-├── campusfix-backend/    # Spring Boot REST API
+â”œâ”€â”€ campusfix-backend/    # Spring Boot REST API
 
-└── ai-sevice/            # FastAPI machine learning service
+â””â”€â”€ ai-sevice/            # FastAPI machine learning service
 
 ```
 
 
 
-\## Running Locally
+## Running Locally
 
 
 
-\### Prerequisites
+### Prerequisites
 
 
 
-\- Node.js and npm
+- Node.js and npm
 
-\- Java and Maven
+- Java and Maven
 
-\- Python and pip
+- Python and pip
 
-\- PostgreSQL
+- PostgreSQL
 
 
 
-\### 1. Start the AI service
+### 1. Start the AI service
 
 
 
@@ -124,11 +124,11 @@ AI API documentation: http://127.0.0.1:8001/docs
 
 
 
-\### 2. Start the Spring Boot backend
+### 2. Start the Spring Boot backend
 
 
 
-Open a second terminal in the project root. Configure PostgreSQL and set the `DB\_PASSWORD` environment variable first.
+Open a second terminal in the project root. Configure PostgreSQL and set the `DB_PASSWORD` environment variable first.
 
 
 
@@ -146,7 +146,7 @@ Backend base URL: http://localhost:8080
 
 
 
-\### 3. Start the React frontend
+### 3. Start the React frontend
 
 
 
@@ -170,7 +170,7 @@ Open the local URL shown by Vite, usually http://localhost:5173.
 
 
 
-\## API Endpoints
+## API Endpoints
 
 
 
@@ -190,27 +190,27 @@ The Spring Boot backend runs on port `8080`, while the AI service runs on port `
 
 
 
-\## Future Improvements
+## Future Improvements
 
 
 
-\- Student, administrator, and technician dashboards
+- Student, administrator, and technician dashboards
 
-\- User authentication and role-based access control
+- User authentication and role-based access control
 
-\- Email or in-app notifications
+- Email or in-app notifications
 
-\- Deployment with a hosted database
+- Deployment with a hosted database
 
-\- Automated tests and improved error handling
-
-
-
-\## Developer
+- Automated tests and improved error handling
 
 
 
-\*\*Vanshika Singh\*\*  
+## Developer
+
+
+
+**Vanshika Singh**  
 
 Electrical Engineering Student | Aspiring Software Development Engineer
 
@@ -220,11 +220,13 @@ GitHub: https://github.com/vansie-S
 
 
 
-\---
+---
 
 
 
-\*Built to make campus issue reporting and resolution more organized and accessible.\*
+*Built to make campus issue reporting and resolution more organized and accessible.*
+
+
 
 
 
