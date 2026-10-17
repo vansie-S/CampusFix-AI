@@ -2,7 +2,7 @@
 
 
 
-CampusFix AI is a web-based complaint management system designed to help students report campus issues and track their resolution. It uses machine learning to predict complaint categories and priorities, helping streamline complaint handling.
+CampusFix AI is a web-based complaint management system that helps students report campus issues and track their resolution. It uses machine learning to predict complaint categories and priorities.
 
 
 
@@ -10,19 +10,19 @@ CampusFix AI is a web-based complaint management system designed to help student
 
 
 
-\- \*\*Complaint Submission:\*\* Students can submit complaints through a React interface.
+\- \*\*Complaint Submission:\*\* Submit campus complaints through a React interface.
 
-\- \*\*AI-Powered Classification:\*\* A machine learning model predicts complaint categories using TF-IDF and Logistic Regression.
+\- \*\*AI-Powered Classification:\*\* Predict complaint categories using TF-IDF and Logistic Regression.
 
-\- \*\*Priority Prediction:\*\* AI service predicts complaint priority.
+\- \*\*Priority Prediction:\*\* Predict complaint priority using the AI service.
 
 \- \*\*Complaint Tracking:\*\* View complaints and their current status.
 
 \- \*\*Status Management:\*\* Update complaints to OPEN, IN-PROGRESS, or RESOLVED.
 
-\- \*\*Database Integration:\*\* Spring Boot stores complaint records in PostgreSQL.
+\- \*\*Database Integration:\*\* Store complaint records in PostgreSQL through Spring Boot.
 
-\- \*\*REST APIs:\*\* Backend communication through REST endpoints.
+\- \*\*REST APIs:\*\* Communicate between services using REST endpoints.
 
 
 
@@ -54,7 +54,7 @@ CampusFix AI is a web-based complaint management system designed to help student
 
 
 
-1\. The user submits a complaint through the React frontend.
+1\. Users submit complaints through the React frontend.
 
 2\. The AI service predicts the complaint category and priority.
 
@@ -106,6 +106,10 @@ CampusFix/
 
 
 
+Open a terminal in the project root and run:
+
+
+
 ```powershell
 
 cd ai-sevice
@@ -124,7 +128,7 @@ AI API documentation: http://127.0.0.1:8001/docs
 
 
 
-Configure your PostgreSQL connection and set the `DB\_PASSWORD` environment variable before starting the backend.
+Open a second terminal in the project root. Configure PostgreSQL and set the `DB\_PASSWORD` environment variable first.
 
 
 
@@ -146,7 +150,7 @@ Backend base URL: http://localhost:8080
 
 
 
-Open another terminal:
+Open a third terminal in the project root:
 
 
 
@@ -162,7 +166,7 @@ npm run dev
 
 
 
-Open the local URL displayed by Vite, usually http://localhost:5173.
+Open the local URL shown by Vite, usually http://localhost:5173.
 
 
 
@@ -178,11 +182,11 @@ Open the local URL displayed by Vite, usually http://localhost:5173.
 
 | PUT | `/api/complaints/{id}/status?status=RESOLVED` | Update a complaint's status |
 
-| POST | `/predict` | Predict complaint category and priority through the AI service |
+| POST | `/predict` | Predict complaint category and priority using the AI service |
 
 
 
-The AI prediction endpoint runs on port `8001`; the complaint endpoints run on port `8080`.
+The Spring Boot backend runs on port `8080`, while the AI service runs on port `8001`.
 
 
 
