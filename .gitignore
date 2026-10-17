@@ -1,0 +1,36 @@
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+application-local.properties
+
+# Node.js / React
+node_modules/
+dist/
+build/
+coverage/
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Java / Maven
+target/
+*.class
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs and crash dumps
+*.log
+hs_err_pid*
+replay_pid*
+
+# OS files
+.DS_Store
+Thumbs.db

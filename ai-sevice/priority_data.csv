@@ -1,0 +1,25 @@
+complaint,priority
+"The main electrical panel is sparking",HIGH
+"There is smoke coming from the electrical socket",HIGH
+"Water pipe has burst in the hostel",HIGH
+"The entire hostel block has no electricity",HIGH
+"Internet is completely down across the hostel",HIGH
+"The lift is not working and students are stuck",HIGH
+"Major water leakage in the bathroom",HIGH
+"The ceiling is leaking heavily",HIGH
+"Fan is not working in my room",MEDIUM
+"Light in my room is not working",MEDIUM
+"Water tap is leaking",MEDIUM
+"WiFi is not working in my room",MEDIUM
+"Room cleaning has not been done",MEDIUM
+"Mess food is cold",MEDIUM
+"Door lock is broken",MEDIUM
+"Corridor light is flickering",MEDIUM
+"Small stain on the hostel wall",LOW
+"Need a replacement dustbin",LOW
+"Room needs minor cleaning",LOW
+"One chair is slightly damaged",LOW
+"Need an extra table in the study room",LOW
+"Water cooler needs cleaning",LOW
+"Need a new notice board",LOW
+"Small paint issue on the wall",LOW
