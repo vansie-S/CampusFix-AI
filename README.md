@@ -232,6 +232,67 @@ The Spring Boot backend communicates with the AI service to obtain predictions a
 - Automated testing and improved error handling
 - Complaint analytics and reporting dashboards
 - Model evaluation using a larger, representative dataset
+
+  ## System Architecture
+
+```mermaid
+flowchart TB
+    U(["Student"])
+
+    subgraph FRONTEND["Frontend Layer - Vercel"]
+        UI["React Web Application"]
+        FORM["Complaint Submission Form"]
+        DASH["Complaint Dashboard"]
+        UI --> FORM
+        UI --> DASH
+    end
+
+    subgraph BACKEND["Backend Layer - Render"]
+        API["Spring Boot REST API"]
+        VALIDATE["Process Complaint Request"]
+        STATUS["Complaint & Status Management"]
+    end
+
+    subgraph AI["AI Layer - Render"]
+        FASTAPI["FastAPI Prediction Endpoint"]
+        PREPROCESS["TF-IDF Text Vectorization"]
+        MODEL["Logistic Regression Classifier"]
+        PRED["Predicted Category & Priority"]
+        FASTAPI --> PREPROCESS
+        PREPROCESS --> MODEL
+        MODEL --> PRED
+    end
+
+    subgraph DATABASE["Database Layer - Neon"]
+        DB[("PostgreSQL Database")]
+        RECORDS["Complaint Records & Status"]
+        DB --- RECORDS
+    end
+
+    U --> UI
+    FORM -->|"Submit complaint"| API
+    API --> VALIDATE
+    VALIDATE -->|"Request prediction"| FASTAPI
+    PRED -->|"Return prediction"| API
+    API -->|"Save complaint"| DB
+    DB -->|"Persisted records"| API
+    API --> STATUS
+    STATUS -->|"Fetch complaints / update status"| DB
+    API -->|"REST API response"| DASH
+    DASH -->|"View complaints & statuses"| U
+
+    classDef user fill:#e8eaf6,stroke:#3949ab,color:#1a237e
+    classDef frontend fill:#e3f2fd,stroke:#1976d2,color:#0d47a1
+    classDef backend fill:#e8f5e9,stroke:#388e3c,color:#1b5e20
+    classDef ai fill:#fff3e0,stroke:#f57c00,color:#e65100
+    classDef database fill:#f3e5f5,stroke:#8e24aa,color:#4a148c
+
+    class U user
+    class UI,FORM,DASH frontend
+    class API,VALIDATE,STATUS backend
+    class FASTAPI,PREPROCESS,MODEL,PRED ai
+    class DB,RECORDS database
+```
   
 ## Developer
 
