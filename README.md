@@ -43,18 +43,34 @@ CampusFix AI is a web-based complaint management system that helps students repo
 
 ## System Architecture
 
+CampusFix AI uses a service-based architecture connecting the frontend, backend, database, and machine learning service.
 
+1. **Frontend:** The React application allows users to submit complaints and view complaint records and statuses.
+2. **Backend:** The Spring Boot REST API receives requests and manages complaint operations.
+3. **AI Service:** The backend sends complaint text to the FastAPI service, which predicts the complaint category and priority using the machine learning pipeline.
+4. **Database:** PostgreSQL stores complaint details and status information.
+5. **Response:** The backend returns the relevant complaint data to the frontend, where users can view the results and updated statuses.
 
-1. Users submit complaints through the React frontend.
+### Architecture Flow
 
-2. The AI service predicts the complaint category and priority.
-
-3. The Spring Boot backend handles complaint operations.
-
-4. PostgreSQL stores complaint details and status information.
-
-5. The frontend displays complaints and their updated statuses.
-
+```text
+User
+  |
+  v
+React Frontend (Vercel)
+  |
+  v
+Spring Boot REST API (Render)
+  |                 |
+  v                 v
+PostgreSQL       FastAPI AI Service (Render)
+(Neon)                |
+                      v
+              TF-IDF + Logistic Regression
+                      |
+                      v
+              Predicted Category & Priority
+```
 
 
 ## Project Structure
