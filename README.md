@@ -54,14 +54,14 @@ CampusFix AI uses a machine learning model to classify student complaints and pr
 
 ## Technology Stack
 
-- **Frontend:** React, Vite, JavaScript, CSS
-- **Backend:** Java, Spring Boot
-- **AI Service:** Python, FastAPI, scikit-learn
-- **Machine Learning:** TF-IDF, Logistic Regression
+- **Frontend:** React.js, Vite, JavaScript, CSS
+- **Backend:** Java, Spring Boot, REST APIs
+- **AI/ML:** Python, FastAPI, scikit-learn, TF-IDF, Logistic Regression
 - **Database:** PostgreSQL
-- **API Testing:** Swagger UI, Postman
+- **Database Hosting:** Neon (Serverless PostgreSQL)
+- **Deployment:** Vercel (Frontend), Render (Backend & AI Service)
 - **Version Control:** Git, GitHub
-
+  
 ## System Architecture
 
 CampusFix AI uses a service-based architecture connecting the frontend, backend, database, and machine learning service.
