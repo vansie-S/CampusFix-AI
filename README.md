@@ -214,6 +214,13 @@ Interactive API documentation: https://campusfix-ai-6p09.onrender.com/docs
 
 The Spring Boot backend communicates with the AI service to obtain predictions and manages complaint persistence through PostgreSQL.
 
+## Security and Configuration
+
+- External service URLs are configured using environment variables.
+- Database credentials and sensitive configuration values should be kept out of version control.
+- Cross-Origin Resource Sharing (CORS) is configured for frontend-backend communication.
+- Separate configuration is maintained for local development and deployment.
+
 
 
 
