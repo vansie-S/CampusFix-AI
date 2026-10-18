@@ -50,6 +50,7 @@ CampusFix AI uses a machine learning model to classify student complaints and pr
 - **AI/ML:** Python, FastAPI, scikit-learn, TF-IDF, Logistic Regression
 - **Database:** PostgreSQL
 - **Database Hosting:** Neon (Serverless PostgreSQL)
+- **API Testing:** Swagger UI, Postman
 - **Deployment:** Vercel (Frontend), Render (Backend & AI Service)
 - **Version Control:** Git, GitHub
   
