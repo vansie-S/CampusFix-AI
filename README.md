@@ -167,17 +167,31 @@ npm run dev
 
 Open the local URL shown by Vite, usually http://localhost:5173.
 
-
 ## API Endpoints
 
 ### Spring Boot Backend
 
+**Base URL:** `https://campusfix-backend-gxmz.onrender.com`
+
 | Method | Endpoint | Purpose |
 |---|---|---|
+| POST | `/api/complaints` | Submit a new complaint |
 | GET | `/api/complaints` | Retrieve all complaints |
+| GET | `/api/complaints/{id}` | Retrieve a complaint by ID |
 | PUT | `/api/complaints/{id}/status?status=RESOLVED` | Update a complaint's status |
+| DELETE | `/api/complaints/{id}` | Delete a complaint |
 
-Base URL: `http://localhost:8080`
+### FastAPI AI Service
+
+**Base URL:** `https://campusfix-ai-6p09.onrender.com`
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| POST | `/predict` | Predict complaint category and priority |
+
+Interactive API documentation: https://campusfix-ai-6p09.onrender.com/docs
+
+The Spring Boot backend communicates with the AI service to obtain predictions and manages complaint persistence through PostgreSQL.
 
 ### FastAPI AI Service
 
