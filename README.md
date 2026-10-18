@@ -193,17 +193,6 @@ Interactive API documentation: https://campusfix-ai-6p09.onrender.com/docs
 
 The Spring Boot backend communicates with the AI service to obtain predictions and manages complaint persistence through PostgreSQL.
 
-### FastAPI AI Service
-
-| Method | Endpoint | Purpose |
-|---|---|---|
-| POST | `/predict` | Predict complaint category and priority |
-
-Base URL: `http://127.0.0.1:8001`
-
-Interactive API documentation: `http://127.0.0.1:8001/docs`
-
-The Spring Boot backend runs on port `8080`, while the AI service runs on port `8001`.
 
 
 
