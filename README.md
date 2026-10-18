@@ -72,26 +72,25 @@ CampusFix AI uses a service-based architecture connecting the frontend, backend,
 4. **Database:** PostgreSQL stores complaint details and status information.
 5. **Response:** The backend returns the relevant complaint data to the frontend, where users can view the results and updated statuses.
 
+
+
+
 ### Architecture Flow
 
-```text
-User
-  |
-  v
-React Frontend (Vercel)
-  |
-  v
-Spring Boot REST API (Render)
-  |                 |
-  v                 v
-PostgreSQL       FastAPI AI Service (Render)
-(Neon)                |
-                      v
-              TF-IDF + Logistic Regression
-                      |
-                      v
-              Predicted Category & Priority
+```mermaid
+flowchart TD
+    A["Student"] --> B["React Frontend - Vercel"]
+    B --> C["Spring Boot Backend - Render"]
+    C --> D["FastAPI AI Service - Render"]
+    D --> E["TF-IDF + Logistic Regression"]
+    E --> F["Predicted Category and Priority"]
+    F --> C
+    C --> G[("PostgreSQL Database - Neon")]
+    G --> C
+    C --> H["Complaint List and Status"]
+    H --> B
 ```
+
 
 
 ## Project Structure
