@@ -25,6 +25,12 @@ CampusFix AI uses a machine learning model to classify student complaints and pr
 
 ![AI Prediction Response](ai-response.png)
 
+## Deployment
+
+- **Frontend (Vercel):** https://campus-fix-ai-iota.vercel.app/
+- **Backend (Render):** https://campusfix-backend-gxmz.onrender.com/api/complaints
+- **AI Service (Render):** https://campusfix-ai-6p09.onrender.com/docs
+- **Database (Neon PostgreSQL):** Managed PostgreSQL database
 
 ## Features
 
