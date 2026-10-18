@@ -198,20 +198,13 @@ The Spring Boot backend communicates with the AI service to obtain predictions a
 
 ## Future Improvements
 
-
-
 - Student, administrator, and technician dashboards
-
 - User authentication and role-based access control
-
 - Email or in-app notifications
-
-- Deployment with a hosted database
-
-- Automated tests and improved error handling
-
-
-
+- Automated testing and improved error handling
+- Complaint analytics and reporting dashboards
+- Model evaluation using a larger, representative dataset
+  
 ## Developer
 
 
