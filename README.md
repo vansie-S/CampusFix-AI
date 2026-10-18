@@ -34,22 +34,13 @@ CampusFix AI uses a machine learning model to classify student complaints and pr
 
 ## Features
 
-
-
-- **Complaint Submission:** Submit campus complaints through a React interface.
-
-- **AI-Powered Classification:** Predict complaint categories using TF-IDF and Logistic Regression.
-
-- **Priority Prediction:** Predict complaint priority using the AI service.
-
-- **Complaint Tracking:** View complaints and their current status.
-
-- **Status Management:** Update complaints to OPEN, IN-PROGRESS, or RESOLVED.
-
-- **Database Integration:** Store complaint records in PostgreSQL through Spring Boot.
-
-- **REST APIs:** Communicate between services using REST endpoints.
-
+- **AI-Powered Complaint Classification:** Automatically predicts complaint categories using TF-IDF and Logistic Regression.
+- **Priority Prediction:** Assigns a priority level (Low, Medium, or High) to submitted complaints.
+- **Complaint Management:** Submit, view, and track campus complaints through a web interface.
+- **Status Management:** Update complaint statuses to OPEN, IN-PROGRESS, or RESOLVED.
+- **REST API Integration:** Connects the React frontend, Spring Boot backend, and FastAPI prediction service.
+- **Persistent Data Storage:** Stores complaint records and status updates in PostgreSQL hosted on Neon.
+- **API Testing:** Supports endpoint exploration and testing through Swagger UI and Postman.
 
 
 ## Technology Stack
