@@ -4,6 +4,11 @@
 
 CampusFix AI is a web-based complaint management system that helps students report campus issues and track their resolution. It uses machine learning to predict complaint categories and priorities.
 
+## Live Demo
+
+- **Live Application (Frontend):** https://campus-fix-ai-iota.vercel.app
+- **Backend API (Complaints):** https://campusfix-backend-gxmz.onrender.com/api/complaints
+- **AI Service Documentation (FastAPI):** https://campusfix-ai-6p09.onrender.com/docs
 
 
 ## Features
