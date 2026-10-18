@@ -13,6 +13,17 @@ CampusFix AI is a web-based complaint management system that helps students repo
 
 ![CampusFix AI Dashboard](<Screenshot (395).png>)
 
+## AI Prediction Example
+
+CampusFix AI uses a machine learning model to classify student complaints and predict their priority.
+
+**Request Body**
+
+![AI Prediction Request](ai-request.png)
+
+**AI Response**
+
+![AI Prediction Response](ai-response.png)
 
 
 ## Features
